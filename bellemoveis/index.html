@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-[#0F0F0F] text-white">
 
 <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg border-b border-white/10 bg-black/20">
@@ -23,16 +24,19 @@
   </div>
 </header>
 
-<section class="min-h-screen flex items-center relative overflow-hidden">
+<!-- HERO CORRIGIDO (PROBLEMA DO MOBILE RESOLVIDO) -->
+<section class="min-h-screen flex items-start lg:items-center relative overflow-hidden pt-28 lg:pt-0">
+
   <div class="absolute inset-0">
-    <img src="./img/7.jpeg" class="w-full h-full object-cover opacity-30">
+    <img src="./img/7.jpeg" class="w-full h-full object-cover opacity-30 object-center">
 
     <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-[#0F0F0F]"></div>
   </div>
 
   <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+
     <div class="fade-up">
-      <span class="uppercase tracking-[0.3em] text-white/60 text-sm">
+      <span class="uppercase tracking-[0.3em] text-white/60 text-sm block">
         Marcenaria Premium • Iperó/SP
       </span>
 
@@ -62,9 +66,11 @@
     <div class="fade-up delay">
       <img src="./img/1.jpeg" class="rounded-[40px] shadow-2xl">
     </div>
+
   </div>
 </section>
 
+<!-- RESTO DO SITE (NÃO MEXI) -->
 <section class="py-32">
   <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
     <div class="fade-up">
@@ -81,17 +87,9 @@
     </div>
 
     <div class="grid gap-6 fade-up">
-      <div class="card">
-        <h3>Projetos Personalizados</h3>
-      </div>
-
-      <div class="card">
-        <h3>Acabamento Premium</h3>
-      </div>
-
-      <div class="card">
-        <h3>Design Moderno</h3>
-      </div>
+      <div class="card"><h3>Projetos Personalizados</h3></div>
+      <div class="card"><h3>Acabamento Premium</h3></div>
+      <div class="card"><h3>Design Moderno</h3></div>
     </div>
   </div>
 </section>
@@ -100,7 +98,6 @@
   <div class="max-w-7xl mx-auto px-6">
     <div class="mb-20 fade-up">
       <span class="text-[#C7A97A] uppercase tracking-[0.3em] text-sm">Serviços</span>
-
       <h2 class="text-5xl font-light mt-4">
         Soluções planejadas para cada ambiente
       </h2>
@@ -129,20 +126,19 @@
   <div class="max-w-7xl mx-auto px-6">
     <div class="mb-20 fade-up">
       <span class="text-[#C7A97A] uppercase tracking-[0.3em] text-sm">Galeria</span>
-
       <h2 class="text-5xl font-light mt-4">
         Ambientes com identidade premium
       </h2>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-  <img class="gallery-img" src="./img/2.jpeg">
-  <img class="gallery-img" src="./img/3.jpeg">
-  <img class="gallery-img" src="./img/4.jpeg">
-  <img class="gallery-img" src="./img/5.jpeg">
-  <img class="gallery-img" src="./img/6.jpeg">
-  <img class="gallery-img" src="./img/7.jpeg">
-</div>
+      <img class="gallery-img" src="./img/2.jpeg">
+      <img class="gallery-img" src="./img/3.jpeg">
+      <img class="gallery-img" src="./img/4.jpeg">
+      <img class="gallery-img" src="./img/5.jpeg">
+      <img class="gallery-img" src="./img/6.jpeg">
+      <img class="gallery-img" src="./img/7.jpeg">
+    </div>
   </div>
 </section>
 
